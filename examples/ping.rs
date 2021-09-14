@@ -1,4 +1,4 @@
-use brazier::{Mediator, Request, RequestHandler};
+use brazier::*;
 
 pub struct Ping {}
 
@@ -9,13 +9,13 @@ pub struct PingHandler;
 
 #[async_trait::async_trait]
 impl RequestHandler<Ping, String> for PingHandler {
-    async fn handle(&mut self, _request: Ping) -> brazier::Result<String> {
+    async fn handle(&mut self, _request: Ping) -> Result<String> {
         Ok(String::from("pong!"))
     }
 }
 
 #[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
+async fn main() -> Result<()> {
     // Create a new Mediator
     let mut mediator = Mediator::new();
 
