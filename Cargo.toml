@@ -1,0 +1,19 @@
+[package]
+name = "brazier"
+version = "0.0.1"
+edition = "2018"
+authors = ["Yves Bonami <yves.bonami@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+description = """
+A mediator implementation in Rust, heavily inspired by the .NET MediatR package (https://github.com/jbogard/MediatR).
+"""
+repository = "https://github.com/yves-bonami/brazier"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.51"
+
+[dev-dependencies]
+tokio = { version = "1.11.0", features = ["full"] }
