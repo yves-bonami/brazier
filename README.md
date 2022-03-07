@@ -1,4 +1,6 @@
 # Brazier
+![crates.io](https://img.shields.io/crates/v/brazier.svg)
+[![Rust](https://github.com/yves-bonami/brazier/actions/workflows/rust.yml/badge.svg)](https://github.com/yves-bonami/brazier/actions/workflows/rust.yml)
 
 An implemenation of the mediator pattern.
 
