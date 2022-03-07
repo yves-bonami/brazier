@@ -1,7 +1,7 @@
 [package]
 name = "brazier"
 version = "0.0.1"
-edition = "2018"
+edition = "2021"
 authors = ["Yves Bonami <yves.bonami@gmail.com>"]
 license = "MIT"
 readme = "README.md"
@@ -13,7 +13,7 @@ repository = "https://github.com/yves-bonami/brazier"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-async-trait = "0.1.51"
+async-trait = "0.1.52"
 
 [dev-dependencies]
-tokio = { version = "1.11.0", features = ["full"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
