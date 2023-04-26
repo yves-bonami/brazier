@@ -1,6 +1,6 @@
 [package]
 name = "brazier"
-version = "0.0.1"
+version = "0.1.0"
 edition = "2021"
 authors = ["Yves Bonami <yves.bonami@gmail.com>"]
 license = "MIT"
@@ -15,7 +15,7 @@ keywords = ["mediator"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-async-trait = "0.1.52"
+async-trait = "0.1.68"
 
 [dev-dependencies]
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
